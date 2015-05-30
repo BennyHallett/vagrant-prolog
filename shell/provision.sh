@@ -2,7 +2,7 @@ echo "Beginning provision"
 
 echo "  Adding PPA"
 apt-get -y install software-properties-common --force-yes >/dev/null 2>&1
-apt-add-repository -y ppa:swi-prolog/stable
+apt-add-repository -y ppa:swi-prolog/stable >/dev/null 2>&1
 
 echo "  Updating package information"
 apt-get -y update >/dev/null 2>&1
